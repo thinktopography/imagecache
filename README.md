@@ -1,5 +1,5 @@
 # Imagecache
-Ruby Image Cropping and Caching Library
+An image cropping and caching library written in Ruby
 
 ## Installation
 
