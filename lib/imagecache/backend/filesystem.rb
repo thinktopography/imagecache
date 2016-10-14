@@ -41,7 +41,7 @@ module Imagecache
           fullpath = @root
           directories.each do |directory|
             fullpath += "/#{directory}"
-            if !Dir.exists?(fullpath)
+            if !Dir.exist?(fullpath)
               Dir.mkdir(fullpath)
             end
           end

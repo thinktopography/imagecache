@@ -1,6 +1,7 @@
 # encoding: utf-8
 
 module Imagecache
+
   class UrlWriter
 
     def write(conversions, assetpath)
@@ -28,4 +29,5 @@ module Imagecache
       end
 
   end
+  
 end

@@ -1,6 +1,7 @@
 # encoding: utf-8
 
 module Imagecache
+
   class Identify
 
     def identify(file)
@@ -12,4 +13,5 @@ module Imagecache
     end
 
   end
+  
 end

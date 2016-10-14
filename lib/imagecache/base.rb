@@ -1,12 +1,13 @@
 # encoding: utf-8
 
 module Imagecache
+
   class Base
 
     def process(path)
       url = url_reader.read(path)
-      if original = source(url.assetpath)
-        if converted = converter.convert(original, url.conversions)
+      if (original = source(url.assetpath))
+        if (converted = converter.convert(original, url.conversions))
           newurl = url_writer.write(url.conversions, url.assetpath)
           filesystem.set(newurl, converted.data)
           return converted
@@ -48,4 +49,5 @@ module Imagecache
       end
 
   end
+  
 end

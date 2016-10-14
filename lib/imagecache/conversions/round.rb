@@ -1,17 +1,16 @@
 # encoding: utf-8
 
 module Imagecache
+
   module Conversions
+
     class Round
 
       def process(file, metadata, conversion)
         shortest = [metadata.width, metadata.height].min
-        Rails.logger.debug(conversion.radius)
-        Rails.logger.debug(shortest)
         radius = (conversion.radius / 100.to_f) * shortest
         command = command(file.path, radius)
-        Rails.logger.debug(command)
-        output = `#{command}`
+        `#{command}`
         data = File.open("#{file.path}.png").read
         File.unlink("#{file.path}.png")
         File.unlink(file.path)
@@ -31,5 +30,7 @@ module Imagecache
         end
 
     end
+
   end
+
 end

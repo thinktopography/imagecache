@@ -1,6 +1,7 @@
 # encoding: utf-8
 
 module Imagecache
+
   class UrlReader
 
     def read(path)
@@ -34,4 +35,5 @@ module Imagecache
       end
 
   end
+  
 end

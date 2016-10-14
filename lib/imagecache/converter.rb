@@ -1,10 +1,11 @@
 # encoding: utf-8
 
 module Imagecache
+
   class Converter
 
     def convert(data, conversions)
-      (1..conversions.length).each do |i|
+      (1..conversions.length).each do
         data = _convert(assetpath, conversions)
       end
       file = file(data)
@@ -63,6 +64,6 @@ module Imagecache
         @identify ||= Imagecache::Identify.new
       end
 
-
   end
+
 end
