@@ -40,11 +40,11 @@ module Imagecache
       end
 
       def filesystem
-        @filesystem ||= Imagecache::Backends::Filesystem.new
+        @filesystem ||= Imagecache::Backend::Filesystem.new
       end
 
       def s3
-        @s3 ||= Imagecache::Backends::S3.new
+        @s3 ||= Imagecache::Backend::S3.new
       end
 
   end

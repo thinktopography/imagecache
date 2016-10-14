@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 module Imagecache
-  module Backends
+  module Backend
     class S3
 
       def get(key)

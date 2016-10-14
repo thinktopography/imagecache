@@ -1,0 +1,11 @@
+machine:
+  ruby:
+    version: 2.2.2
+database:
+  override:
+    - echo null
+deployment:
+  release:
+    branch: release
+    commands:
+      - cd ~/backframe; bundle exec rake release

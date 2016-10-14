@@ -1,7 +1,9 @@
 # encoding: utf-8
 
 module Imagecache
-  module Backends
+
+  module Backend
+
     class Filesystem
 
       def initialize(root = nil)
@@ -36,7 +38,7 @@ module Imagecache
 
         def mkdir(filepath)
           directories = File.dirname(filepath).split("/").drop(1)
-          fullpath = ""
+          fullpath = @root
           directories.each do |directory|
             fullpath += "/#{directory}"
             if !Dir.exists?(fullpath)
@@ -57,5 +59,7 @@ module Imagecache
       end
 
     end
+
   end
+
 end

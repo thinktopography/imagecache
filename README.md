@@ -1,6 +1,27 @@
 # Imagecache
 An image cropping and caching library written in Ruby
 
+<table>
+  <tr>
+    <td>Build Status</td>
+    <td>
+      <a href="https://circleci.com/gh/thinktopography/imageache">
+        <img src="https://img.shields.io/circleci/project/thinktopography/imagecache.svg?maxAge=600" alt="Build Status" >
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>Code Quality</td>
+    <td>
+      <a href="https://codeclimate.com/github/thinktopography/imagecache">
+        <img src="https://img.shields.io/codeclimate/github/thinktopography/imagecache.svg?maxAge=600" alt="Code Climate" />
+      </a>
+      <a href="https://codeclimate.com/github/thinktopography/imagecache/coverage">
+        <img src="https://img.shields.io/codeclimate/coverage/github/thinktopography/imagecache.svg?maxAge=600" alt="Code Coverage" />
+      </a>
+    </td>
+  </tr>
+</table>
 ## Installation
 
 ```sh

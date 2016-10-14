@@ -1,26 +1,22 @@
 $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
-require 'rake/testtask'
 require 'bundler/version'
 require './lib/imagecache'
 require './lib/imagecache/version'
+require 'rspec/core/rake_task'
 
-Rake::TestTask.new do |t|
-  t.libs << '.' << 'lib' << 'test'
-  t.test_files = FileList['test/*_test.rb']
-  t.verbose = false
-end
+RSpec::Core::RakeTask.new(:spec)
 
 desc "Build the gem"
 task :build do
-  system "gem build imagecache.gemspec"
+  system "gem build backframe.gemspec"
 end
 
 desc "install the gem"
 task :install do
-  system "gem install imagecache-#{Imagecache::VERSION}.gem"
+  system "gem install backframe-#{imagecache::VERSION}.gem"
 end
 
 desc "Build and release the gem"
 task :release => :build do
-  system "gem push imagecache-#{Imagecache::VERSION}.gem"
+  system "gem push backframe-#{imagecache::VERSION}.gem"
 end

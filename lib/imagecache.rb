@@ -1,9 +1,9 @@
 # encoding: utf-8
 
 module Imagecache
-  require 'imagecache/backends/filesystem'
-  require 'imagecache/backends/redis'
-  require 'imagecache/backends/s3'
+  require 'imagecache/backend/filesystem'
+  require 'imagecache/backend/redis'
+  require 'imagecache/backend/s3'
   require 'imagecache/conversions/crop'
   require 'imagecache/conversions/fit'
   require 'imagecache/conversions/resize'

@@ -1,8 +1,11 @@
 .project
 .DS_Store
 .bundle
+.idea
 coverage
 rdoc
 pkg
 *.gem
-.idea/
+example.rb
+Gemfile.lock
+spec/public/imagecache/images/sunset.jpg
