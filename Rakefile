@@ -8,15 +8,15 @@ RSpec::Core::RakeTask.new(:spec)
 
 desc "Build the gem"
 task :build do
-  system "gem build backframe.gemspec"
+  system "gem build imagecache.gemspec"
 end
 
 desc "install the gem"
 task :install do
-  system "gem install backframe-#{imagecache::VERSION}.gem"
+  system "gem install imagecache-#{Imagecache::VERSION}.gem"
 end
 
 desc "Build and release the gem"
 task :release => :build do
-  system "gem push backframe-#{imagecache::VERSION}.gem"
+  system "gem push imagecache-#{Imagecache::VERSION}.gem"
 end
