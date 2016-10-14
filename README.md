@@ -5,7 +5,7 @@ An image cropping and caching library written in Ruby
   <tr>
     <td>Build Status</td>
     <td>
-      <a href="https://circleci.com/gh/thinktopography/imageache">
+      <a href="https://circleci.com/gh/thinktopography/imagecache">
         <img src="https://img.shields.io/circleci/project/thinktopography/imagecache.svg?maxAge=600" alt="Build Status" >
       </a>
     </td>
