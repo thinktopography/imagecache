@@ -4,6 +4,17 @@ module Imagecache
 
   class Base
 
+    class << self
+
+      def build(*args)
+      end
+
+      def process(path)
+        new.process(path)
+      end
+
+    end
+
     def process(path)
       url = url_reader.read(path)
       if (original = source(url.assetpath))
@@ -49,5 +60,5 @@ module Imagecache
       end
 
   end
-  
+
 end

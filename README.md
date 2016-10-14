@@ -40,8 +40,7 @@ In your controller:
 class ImagecacheController < ApplicationController
 
   def show
-    imagecache = Imagecache::Base.new
-    if image = imagecache.process(params[:permalink])
+    if image = Imagecache::Base.process(params[:permalink])
       redirect_to params[:permalink], status: 301
     else
       render text: '', status: 404
